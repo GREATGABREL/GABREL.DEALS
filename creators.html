@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Creators</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-[#F2F2F2]">
+    <nav
+      class="fixed w-full z-50 transition-all duration-300 glassmorphic"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center space-x-3 z-50">
+          <img
+            src="GABREL.png"
+            alt="Gabrel logo"
+            class="w-8 h-8 bg-[#F2F2F2] flex-shrink-0"
+          />
+          <span class="font-bold text-xl tracking-tighter leading-none"
+            >GABREL</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+          <a href="founders.html" class="nav-link">For Founders</a>
+          <a href="creators.html" class="nav-link">For Creators</a>
+          <a href="contact.html" class="nav-link-cta ml-4">Contact</a>
+        </div>
+
+        <button
+          class="md:hidden z-50 flex flex-col justify-center items-end w-10 h-10"
+          id="menu-toggle"
+          aria-label="Toggle Menu"
+        >
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] mb-1.5 transition-all duration-300"
+            id="bar1"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] transition-all duration-300"
+            id="bar2"
+          ></div>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold opacity-0 pointer-events-none transition-opacity duration-300"
+    >
+      <a href="index.html" class="hover:text-[#EC5E27] transition">Home</a>
+      <a href="how-it-works.html" class="hover:text-[#EC5E27] transition"
+        >How It Works</a
+      >
+      <a href="founders.html" class="hover:text-[#EC5E27] transition"
+        >For Founders</a
+      >
+      <a href="creators.html" class="hover:text-[#EC5E27] transition"
+        >For Creators</a
+      >
+      <a href="contact.html" class="hover:text-[#EC5E27] transition">Contact</a>
+    </div>
+
+    <main class="pt-40 pb-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-black mb-12 reveal">
+          Deliver Value, Not Just Noise.
+        </h1>
+        <p class="text-xl text-gray-400 mb-16 reveal">
+          I don't run a job board. I manage a network of creators who understand
+          DeFi and can communicate complex value to an audience that cares. If
+          you are tired of chasing founders for payment or clarity, let's talk.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-1 mb-24 reveal">
+          <div class="p-12 border border-white/10 bg-white/[0.01]">
+            <h2 class="text-2xl font-bold mb-4">Alignment</h2>
+            <p class="text-sm text-gray-500">
+              I only bring you deals that match your audience and your personal
+              brand values.
+            </p>
+          </div>
+          <div class="p-12 border border-white/10 bg-white/[0.01]">
+            <h2 class="text-2xl font-bold mb-4">Structure</h2>
+            <p class="text-sm text-gray-500">
+              Clear briefs, guaranteed payments, and direct lines to the
+              founders who matter.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-xl text-gray-400 reveal">
+          I work with researchers, video editors, threads writers, and platform
+          influencers who have a proven track record of deep ecosystem
+          understanding. No beginners.
+        </p>
+
+        <div class="mt-20">
+          <a href="contact.html" class="btn-primary inline-block reveal"
+            >Join the Network</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-20 border-t border-white/10 px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="font-bold text-xl">GABREL</span>
+        <div class="flex space-x-12 text-sm uppercase">
+          <a href="https://x.com/GREATGABREL" target="_blank">Twitter</a>
+          <a href="https://t.me/GREATGABREL" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

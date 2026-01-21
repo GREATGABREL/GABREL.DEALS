@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How It Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-[#F2F2F2]">
+    <nav
+      class="fixed w-full z-50 transition-all duration-300 glassmorphic"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center space-x-3 z-50">
+          <img
+            src="GABREL.png"
+            alt="Gabrel logo"
+            class="w-8 h-8 bg-[#F2F2F2] flex-shrink-0"
+          />
+          <span class="font-bold text-xl tracking-tighter leading-none"
+            >GABREL</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+          <a href="founders.html" class="nav-link">For Founders</a>
+          <a href="creators.html" class="nav-link">For Creators</a>
+          <a href="contact.html" class="nav-link-cta ml-4">Contact</a>
+        </div>
+
+        <button
+          class="md:hidden z-50 flex flex-col justify-center items-end w-10 h-10"
+          id="menu-toggle"
+          aria-label="Toggle Menu"
+        >
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] mb-1.5 transition-all duration-300"
+            id="bar1"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] transition-all duration-300"
+            id="bar2"
+          ></div>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold opacity-0 pointer-events-none transition-opacity duration-300"
+    >
+      <a href="index.html" class="hover:text-[#EC5E27] transition">Home</a>
+      <a href="how-it-works.html" class="hover:text-[#EC5E27] transition"
+        >How It Works</a
+      >
+      <a href="founders.html" class="hover:text-[#EC5E27] transition"
+        >For Founders</a
+      >
+      <a href="creators.html" class="hover:text-[#EC5E27] transition"
+        >For Creators</a
+      >
+      <a href="contact.html" class="hover:text-[#EC5E27] transition">Contact</a>
+    </div>
+
+    <main class="pt-40 pb-32 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-black mb-16 reveal">
+          The Deal Process
+        </h1>
+
+        <div class="space-y-24">
+          <div class="reveal">
+            <h2
+              class="text-2xl font-bold mb-4 uppercase tracking-tighter text-[#EC5E27]"
+            >
+              01. Vetting & Inquiry
+            </h2>
+            <p class="text-xl text-gray-400">
+              Whether you are a founder or creator, the process starts with a
+              vetting session to understand current needs, past performance, and
+              long term objectives.
+            </p>
+          </div>
+
+          <div class="reveal">
+            <h2
+              class="text-2xl font-bold mb-4 uppercase tracking-tighter text-[#EC5E27]"
+            >
+              02. Strategic Matching
+            </h2>
+            <p class="text-xl text-gray-400">
+              I identify partners where the creator's audience or skill set
+              matches the founder's specific protocol stage and target
+              demographic.
+            </p>
+          </div>
+
+          <div class="reveal">
+            <h2
+              class="text-2xl font-bold mb-4 uppercase tracking-tighter text-[#EC5E27]"
+            >
+              03. Terms & Incentive Alignment
+            </h2>
+            <p class="text-xl text-gray-400">
+              I facilitate the negotiation to ensure both parties are properly
+              incentivized. Deals are structured around execution and results,
+              not just promise.
+            </p>
+          </div>
+
+          <div class="reveal">
+            <h2
+              class="text-2xl font-bold mb-4 uppercase tracking-tighter text-[#EC5E27]"
+            >
+              04. Onboarding & Launch
+            </h2>
+            <p class="text-xl text-gray-400">
+              A smooth handoff where communication channels are established and
+              the first phase of execution begins under clear guidelines.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-32 p-12 bg-white/[0.02] border border-white/10 reveal">
+          <h3 class="text-2xl font-bold mb-6">
+            Ready to align the right founders and creators?
+          </h3>
+          <a href="contact.html" class="btn-primary inline-block"
+            >Start a Conversation</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer class="py-20 border-t border-white/10 px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="font-bold text-xl">GABREL</span>
+        <div class="flex space-x-12 text-sm uppercase">
+          <a href="https://x.com/GREATGABREL" target="_blank">Twitter</a>
+          <a href="https://t.me/GREATGABREL" target="_blank">Telegram</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

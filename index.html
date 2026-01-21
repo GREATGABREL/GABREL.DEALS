@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GABREL - Deal Broker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-[#F2F2F2]">
+    <nav
+      class="fixed w-full z-50 transition-all duration-300 glassmorphic"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center space-x-3 z-50">
+          <img
+            src="GABREL.png"
+            alt="Gabrel logo"
+            class="w-8 h-8 bg-[#F2F2F2] flex-shrink-0"
+          />
+          <span class="font-bold text-xl tracking-tighter leading-none"
+            >GABREL</span
+          >
+        </a>
+
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="how-it-works.html" class="nav-link">How It Works</a>
+          <a href="founders.html" class="nav-link">For Founders</a>
+          <a href="creators.html" class="nav-link">For Creators</a>
+          <a href="contact.html" class="nav-link-cta ml-4">Contact</a>
+        </div>
+
+        <button
+          class="md:hidden z-50 flex flex-col justify-center items-end w-10 h-10"
+          id="menu-toggle"
+          aria-label="Toggle Menu"
+        >
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] mb-1.5 transition-all duration-300"
+            id="bar1"
+          ></div>
+          <div
+            class="w-6 h-0.5 bg-[#F2F2F2] transition-all duration-300"
+            id="bar2"
+          ></div>
+        </button>
+      </div>
+    </nav>
+
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center space-y-8 text-2xl font-semibold opacity-0 pointer-events-none transition-opacity duration-300"
+    >
+      <a href="index.html">Home</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="founders.html">For Founders</a>
+      <a href="creators.html">For Creators</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <header
+      class="min-h-screen flex items-center justify-center px-6 pt-32 pb-20"
+    >
+      <div class="max-w-5xl w-full text-center">
+        <h1
+          class="text-4xl md:text-7xl font-black leading-[1.1] tracking-tighter mb-10 reveal mx-auto"
+        >
+          I connect serious DeFi founders with <br class="hidden md:block" />
+          creators who actually deliver.
+        </h1>
+
+        <p
+          class="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto reveal delay-1 leading-relaxed"
+        >
+          No cold DMs. No guesswork. Just aligned deals that turn attention into
+          outcomes.
+        </p>
+
+        <div class="reveal delay-2">
+          <a href="contact.html" class="btn-primary inline-block">
+            Start a Conversation
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="py-32 px-6 border-t border-white/10 flex flex-col items-center justify-center"
+    >
+      <div class="max-w-4xl mx-auto text-center">
+        <h2
+          class="text-3xl md:text-5xl font-bold mb-12 reveal tracking-tighter"
+        >
+          The Coordination Gap
+        </h2>
+
+        <p
+          class="text-xl text-gray-400 leading-relaxed reveal delay-1 max-w-3xl mx-auto"
+        >
+          Most DeFi founders waste capital on creators who do not understand the
+          ecosystem, while strong creators are buried under low quality inbound.
+          I bridge this gap by structuring high conviction partnerships where
+          objectives are clear and outcomes are measurable.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-32 px-6 bg-white/[0.02]">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-1">
+        <div
+          class="p-12 border border-white/10 flex flex-col justify-between h-80"
+        >
+          <span class="text-sm font-bold text-[#EC5E27]">01</span>
+          <h3 class="text-2xl font-bold">Vetting</h3>
+          <p class="text-gray-400">
+            Filtering for founders with vision and creators with proven delivery
+            records.
+          </p>
+        </div>
+        <div
+          class="p-12 border border-white/10 flex flex-col justify-between h-80"
+        >
+          <span class="text-sm font-bold text-[#EC5E27]">02</span>
+          <h3 class="text-2xl font-bold">Alignment</h3>
+          <p class="text-gray-400">
+            Defining the scope, incentives, and expectations before the deal
+            starts.
+          </p>
+        </div>
+        <div
+          class="p-12 border border-white/10 flex flex-col justify-between h-80"
+        >
+          <span class="text-sm font-bold text-[#EC5E27]">03</span>
+          <h3 class="text-2xl font-bold">Execution</h3>
+          <p class="text-gray-400">
+            Monitoring the partnership to ensure attention converts into
+            outcomes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-32 px-6">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-50">
+          <div class="text-sm font-bold uppercase tracking-widest">
+            Ecosystem Expert
+          </div>
+          <div class="text-sm font-bold uppercase tracking-widest">
+            Proven Broker
+          </div>
+          <div class="text-sm font-bold uppercase tracking-widest">
+            Web3 Native
+          </div>
+          <div class="text-sm font-bold uppercase tracking-widest">
+            Strategic Partner
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-20 border-t border-white/10 px-6">
+      <div
+        class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8"
+      >
+        <span class="font-bold text-xl">GABREL</span>
+        <div class="flex space-x-12 text-sm uppercase tracking-widest">
+          <a
+            href="https://x.com/GREATGABREL"
+            target="_blank"
+            class="hover:text-white transition"
+            >Twitter</a
+          >
+          <a
+            href="https://t.me/GREATGABREL"
+            target="_blank"
+            class="hover:text-white transition"
+            >Telegram</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.glassmorphic {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-link {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f2f2f2;
+}
+
+.nav-link-cta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  padding: 0.75rem 1.5rem;
+  background: #f2f2f2;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.nav-link-cta:hover {
+  background: #ec5e27;
+}
+
+.btn-primary {
+  padding: 1.25rem 2.5rem;
+  background: #f2f2f2;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+
+.btn-primary:hover {
+  background: #ec5e27;
+  transform: translateY(-2px);
+}
+
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.25rem;
+  color: white;
+  transition: all 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ec5e27;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Animations */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 {
+  transition-delay: 0.2s;
+}
+.delay-2 {
+  transition-delay: 0.4s;
+}
+
+/* Mobile Menu Bars */
+.menu-open #bar1 {
+  transform: translateY(4px) rotate(45deg);
+}
+.menu-open #bar2 {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+/* Center alignment and spacing fixes */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Force headline to not exceed viewport width and maintain hierarchy */
+h1 {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Adjusting the glassmorphic navbar padding to prevent overlap */
+#navbar {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Mobile specific font override for better fit */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important; /* Scale down for mobile thumb reach */
+    line-height: 1.2 !important;
+  }
+}
+
+/* Disable textarea resizing to keep the layout fixed */
+textarea.form-input {
+  resize: none;
+  min-height: 150px; /* Ensures a consistent starting height */
+}
+
+/* Ensure the form container doesn't shift during interaction */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Global utility for section centering */
+section.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Ensure paragraph width doesn't break the center visual on large screens */
+section p {
+  margin-left: auto;
+  margin-right: auto;
+}
